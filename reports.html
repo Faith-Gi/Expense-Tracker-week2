@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports - Expense Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Reports</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="registration.html">Register</a>
+            <a href="reports.html">Reports</a>
+            <a href="expenses.html">Expenses</a>
+            <a href="categories.html">categories</a>
+            <a href="budget.html">budget</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Generate Reports</h2>
+        <form action="generate_report" method="post">
+            <label for="start_date">Start Date:</label>
+            <input type="date" id="start_date" name="start_date" required>
+            <label for="end_date">End Date:</label>
+            <input type="date" id="end_date" name="end_date" required>
+            <button type="submit">Generate Report</button>
+        </form>
+        <h2>Report Results</h2>
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Category</th>
+                <th>Amount</th>
+                <th>Description</th>
+            </tr>
+            <!-- Report rows will go here -->
+        </table>
+    </main>
+</body>
+</html>
